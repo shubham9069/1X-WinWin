@@ -1,0 +1,40 @@
+export const navbarLink = [
+    {
+        name:"Home",
+        href:"#",
+    },
+    {
+        name:"Casino",
+        href:"#",
+    },
+    {
+        name:"Sport",
+        href:"#",
+    },
+    {
+        name:"Game",
+        href:"#",
+    },
+]
+export const userDetailsDropDown = [
+    {
+        name:"Withdraw",
+        href:"#",
+    },
+    {
+        name:"Betting History",
+        href:"#",
+    },
+    {
+        name:"Setting",
+        href:"#",
+    },
+    {
+        name:"Details",
+        href:"#",
+    },
+    {
+        name:"Logout",
+        href:"#",
+    },
+]
