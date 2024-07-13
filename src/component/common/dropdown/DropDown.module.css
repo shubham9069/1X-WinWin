@@ -1,0 +1,55 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown-context {
+  position: absolute;
+  background-color: white;
+  width: fit-content;
+  min-width: 100px;
+  height: fit-content;
+  animation: mymove 1s linear;
+  border-radius: 8px;
+  right: 0;
+  top: 22px;
+  right: -6px;
+}
+.dropdown-context a {
+  display: block;
+  padding: 8px 14px;
+  text-wrap: nowrap;
+  color: var(--dropdown-content-text-color);
+  font-size: 0.9rem;
+}
+.dropdown-context a:first-child {
+  border-radius: 8px 8px 0 0;
+  padding-top: 8px;
+}
+.dropdown-context a:last-child {
+  border-radius: 0 0 8px 8px;
+  padding-bottom: 8px;
+}
+.dropdown-context a:hover {
+  background-color: var(--dropdown-hover-light-grey);
+}
+
+@keyframes mymove {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dropdown-context::after {
+  bottom: 100%;
+  content: "";
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  position: absolute;
+  width: 15px;
+  background-color: white;
+  height: 7px;
+  right: 6px;
+  top: -5px;
+}

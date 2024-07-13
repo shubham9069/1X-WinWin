@@ -1,0 +1,55 @@
+.navbar-wrapper {
+  background-color: var(--color-container-bg);
+  padding: 10px;
+  border-radius: 12px;
+  color: white;
+}
+
+.link {
+  font-weight: 500;
+}
+
+.user-profile {
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  background: var(--color-container-bg-light);
+  border-radius: 20px 8px 8px 20px;
+  align-items: center;
+}
+.user-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--color-icon-bg);
+}
+
+.winner-list {
+  position: relative;
+  padding-left: 20px;
+  background-color: var(--color-bg);
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+.winner-list >p{
+ 
+ animation: roll-up 5s linear infinite;
+
+}
+@keyframes roll-up {
+  8% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+ 
+  
+}
